@@ -25,7 +25,7 @@ if($user != NULL && $pass != NULL && $email != NULL)
 {
     $check = "SELECT * FROM Account_info WHERE username = $user && passwerd = $pass && email = $email ";
     $result = $conn->query($check);
-    if($result )
+    if(!$result)
     {
         // || mysqli_num_rows($result)==0
 
@@ -56,6 +56,10 @@ if($user != NULL && $pass != NULL && $email != NULL)
     else{
         echo("<center>Account already exists");
     }
+}
+else
+{
+    echo("<center>Please enter all credentials</center>");
 }
 
 
