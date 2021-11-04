@@ -3,6 +3,8 @@
 $user = $_POST['User'];
 $pass = $_POST['Pass'];
 $email = $_POST['email'];
+$balance = $_POST['balance'];
+
 
 $servername = "localhost";
 $username = "root";
@@ -31,7 +33,7 @@ if($user != NULL && $pass != NULL && $email != NULL)
 
             $pin = random_int(100, 900);
             $userid = random_int(100000, 900000);
-            $sql1 = "INSERT INTO Account_info VALUES('$userid', '$user', '$email', '$pass', '$pin');";
+            $sql1 = "INSERT INTO Account_info VALUES('$userid', '$user', '$email', '$pass', '$pin', '$balance');";
 
             
 
@@ -40,7 +42,8 @@ if($user != NULL && $pass != NULL && $email != NULL)
 
                 echo("Account created successfully<br>");
                 echo("<center>Your account number is : " . $userid . "</center>" );
-                echo("<br><center>Your account pin is : " . $pin . "<center><br>");
+                echo("<br><center>Your account pin is : " . $pin . "<center>");
+                echo("<br><center>Your account balance is : " . $balance . "<center><br>");
                 echo("Happy Banking :))");
 
 

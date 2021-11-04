@@ -48,7 +48,8 @@ $sql2 = "CREATE TABLE Account_info(
     user VARCHAR(30) NOT NULL,
     email_id VARCHAR(50) NOT NULL,
     passwerd VARCHAR(30) NOT NULL,
-    pin INT(6) NOT NULL)
+    pin INT(6) NOT NULL,
+    balance INT DEFAULT 0)
     ";
 
 if($conn2->query($sql2) === TRUE)
