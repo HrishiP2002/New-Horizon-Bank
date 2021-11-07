@@ -142,6 +142,11 @@ $conn2->close();
                         <a href="contactus.html">&nbsp; &nbsp; Contact us   &nbsp; &nbsp;    | </a>
                     </li>
 
+                    <li>
+                        <a href="signinform.php">&nbsp; &nbsp; Sign in   &nbsp; &nbsp;    | </a>
+                    </li>
+
+
 
 
                 </ul>
